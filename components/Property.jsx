@@ -16,7 +16,7 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
       <Box>
         <Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260} />
       </Box>
-      {/* <Box w='full'>
+      <Box w='full'>
         <Flex paddingTop='2' alignItems='center' justifyContent='space-between'>
           <Flex alignItems='center'>
             <Box paddingRight='3' color='green.400'>{isVerified && <GoVerified />}</Box>
@@ -33,7 +33,7 @@ const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, 
         <Text fontSize='lg'>
           {title.length > 30 ? title.substring(0, 30) + '...' : title}
         </Text>
-      </Box> */}
+      </Box>
     </Flex>
   </Link>
 );
